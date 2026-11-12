@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="debug-display" id="debug"></div>
+    <button id="debug" onclick="debug()">Debug</button>
+    <div class="container">
+        <div id="display">
+            <span id="op"></span>
+            <span id="num">0.</span>
+        </div>
+        <div class="keypad">
+            <div class="numpad">
+                <button class="btn-num" id="btn-num-1" onclick="num_get(this)">1</button>
+                <button class="btn-num" id="btn-num-2" onclick="num_get(this)">2</button>
+                <button class="btn-num" id="btn-num-3" onclick="num_get(this)">3</button>
+                <button class="btn-num" id="btn-num-4" onclick="num_get(this)">4</button>
+                <button class="btn-num" id="btn-num-5" onclick="num_get(this)">5</button>
+                <button class="btn-num" id="btn-num-6" onclick="num_get(this)">6</button>
+                <button class="btn-num" id="btn-num-7" onclick="num_get(this)">7</button>
+                <button class="btn-num" id="btn-num-8" onclick="num_get(this)">8</button>
+                <button class="btn-num" id="btn-num-9" onclick="num_get(this)">9</button>
+                <button class="btn-num" id="btn-num-0" onclick="num_get(this)">0</button>
+                <button class="btn-num" id="btn-num-." onclick="num_get(this)">.</button>
+                <button class="btn-num" id="btn-num-eql" onclick="calc()">=</button>
+            </div>
+            <div class="fnc">
+                <button class="btn-fnc" id="btn_ac" onclick="clr()">AC</button>
+                <button class="btn-fnc" id="btn_M" onclick="backspace()">CL</button>
+                <button class="btn-fnc" id="btn_sub" onclick="operator(this)">-</button>
+                <button class="btn-fnc" id="btn_mlt" onclick="operator(this)">x</button>
+                <button class="btn-fnc" id="btn_add" onclick="operator(this)">+</button>
+                <button class="btn-fnc" id="btn_dvd" onclick="operator(this)">/</button>
+                <button class="btn-fnc" id="btn_prc" onclick="operator(this)">%</button>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    
+    
+</body>
+</html>
